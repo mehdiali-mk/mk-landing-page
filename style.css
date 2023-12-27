@@ -36,6 +36,8 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  z-index: 999999999;
+  pointer-events: none;
 }
 
 /* logo */
@@ -47,7 +49,7 @@ body {
   justify-content: center;
 }
 .logo {
-  font-size: 36rem;
+  font-size: 50rem;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -58,4 +60,97 @@ body {
   opacity: 60%;
   background-size: cover;
   -webkit-filter: blur(0.3px);
+}
+
+/* white strip */
+.white-strip {
+  width: 47%;
+  height: 10rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-card {
+  width: 220px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #191825;
+}
+
+.content {
+  font-size: 1.2rem;
+  color: white;
+  text-align: justify;
+  font-family: "Playfair Display";
+  font-weight: 500;
+}
+
+.white-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.email {
+  font-size: 1.6rem;
+  color: #191825;
+}
+
+.line {
+  width: 15rem;
+  height: 2px;
+  background-color: #191825;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
+
+.icon {
+  font-size: 3.6rem;
+  cursor: pointer;
+  color: #191825;
+}
+
+/* Side Text */
+.side-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: -3.5rem;
+  transform-origin: center;
+  transform: rotate(270deg);
+  color: white;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 12px;
 }
